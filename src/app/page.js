@@ -31,7 +31,7 @@ export default function Home() {
     return <div className="text-center">Loading product, please wait...</div>;
   }
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 w-full p-6 py-4 justify-items-center items-center">
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 w-full justify-items-center items-center">
       {data?.length > 0 ? (
         data?.map((product, index) => {
           return (
