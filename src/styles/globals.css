@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  /* padding: 10px 0px; */
+  background: #e8f0fc;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .custom-button{
+    @apply w-full  delay-150 duration-150 transition-all text-center border border-gray-800 cursor-pointer  bg-customBlue shadow-sm rounded-md px-2 py-1 text-white;
+  }
+  .custon-transition{
+    @apply bg-gradient-to-r from-customBlue to-cyan-600 hover:from-cyan-500 hover:to-emerald-500
+  }
+}
