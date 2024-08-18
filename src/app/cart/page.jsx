@@ -119,7 +119,7 @@ const CartPage = () => {
                 <div>Cart Value: ${calculateSubtotal()}</div>
                 <div>Tax (15%): ${calculateTax(calculateSubtotal())}</div>
                 <div>Shipping: ${calculateShipping("India")}</div>
-                <div>Discount on Item: ${discount?.fixed}</div>
+                <div>Per Item Discount(included): ${discount?.fixed}</div>
                 {appliedCoupon && (
                   <div className="text-green-600">
                     Applied Coupon: -${coupons[appliedCoupon]}
